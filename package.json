@@ -2,9 +2,9 @@
 	"name": "github-insights",
 	"version": "1.0.0",
 	"description": "Get insights for your Github repositories",
-	"main": "index.mjs",
+	"main": "lib/index.mjs",
 	"scripts": {
-		"start": "nodemon --experimental-modules index.mjs"
+		"start": "nodemon --experimental-modules lib/index.mjs"
 	},
 	"keywords": [
 		"Github insights",
