@@ -121,6 +121,14 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
+chalk@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.0.0.tgz#6e98081ed2d17faab615eb52ac66ec1fe6209e72"
+  integrity sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
 chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
@@ -134,14 +142,6 @@ chalk@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
   integrity sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
-  dependencies:
-    ansi-styles "^4.1.0"
-    supports-color "^7.1.0"
-
-chalk@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.0.0.tgz#6e98081ed2d17faab615eb52ac66ec1fe6209e72"
-  integrity sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
@@ -300,7 +300,7 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@^8.2.0:
+dotenv@8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
@@ -618,12 +618,12 @@ mute-stream@0.0.8:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
-node-fetch@^2.6.0:
+node-fetch@2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
 
-nodemon@^2.0.4:
+nodemon@2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.4.tgz#55b09319eb488d6394aa9818148c0c2d1c04c416"
   integrity sha512-Ltced+hIfTmaS28Zjv1BM552oQ3dbwPqI4+zI0SLgq+wpJhSyqgYude/aZa/3i31VCQWMfXJVxvu86abcam3uQ==
@@ -670,7 +670,7 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-ora@^4.0.4:
+ora@4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/ora/-/ora-4.0.4.tgz#e8da697cc5b6a47266655bf68e0fb588d29a545d"
   integrity sha512-77iGeVU1cIdRhgFzCK8aw1fbtT1B/iZAvWjS+l/o1x0RShMgxHUZaD2yDpWsNCPwXg9z1ZA78Kbdvr8kBmG/Ww==
@@ -1024,7 +1024,7 @@ yargs-parser@^18.1.1:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs@^15.3.1:
+yargs@15.3.1:
   version "15.3.1"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-15.3.1.tgz#9505b472763963e54afe60148ad27a330818e98b"
   integrity sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
