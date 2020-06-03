@@ -16,6 +16,19 @@ Get insights for your Github repositories
 5. Wait for the script to fetch and transform the data from Github.
 6. Check the `insights.json` file in the root of the project.
 
+## About
+
+This tool uses the 3rd version of the [Github REST API](https://developer.github.com/v3/).
+
+`github-insights` collects the following data for your user's or organisation's repositories:
+- contributors (TODO)
+- traffic:
+  - git clones
+  - visitors
+- commits (TODO)
+- dependency graph (TODO)
+- forks (TODO)
+
 ## LICENSE
 
 MIT
