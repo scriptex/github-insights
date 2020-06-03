@@ -1,11 +1,22 @@
 {
 	"name": "github-insights",
 	"version": "1.0.0",
+	"description": "Get insights for your Github repositories",
 	"main": "index.mjs",
 	"scripts": {
 		"start": "nodemon --experimental-modules index.mjs"
 	},
-	"author": "Atanas Atanasov",
+	"keywords": [
+		"Github insights",
+		"Insights",
+		"Data Vis"
+	],
+	"repository": "git@github.com:scriptex/github-insights.git",
+	"bugs": {
+		"url": "https://github.com/scriptex/github-insights/issues",
+		"email": "scriptex.bg@gmail.com"
+	},
+	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
 	"license": "MIT",
 	"dependencies": {
 		"chalk": "4.0.0",
