@@ -21,51 +21,42 @@ export class GitHubClient {
 			Accept: 'application/vnd.github.v3.full+json',
 			Authorization: this.credentials
 		};
+
 		return Object.assign(this, ...features);
 	}
 
-	callGitHubAPI({ method, path, data }) {
-		let _response = {};
-
-		return fetch(this.baseUri + path, {
-			method: method,
+	async call({ method, path, data }) {
+		const response = await fetch(this.baseUri + path, {
+			method,
 			headers: this.headers,
 			body: data !== null ? JSON.stringify(data) : null
-		})
-			.then(response => {
-				_response = response;
-				// if response is ok transform response.text to json object
-				// else throw error
-				if (response.ok) {
-					return response.json();
-				} else {
-					throw new HttpException({
-						message: `HttpException[${method}]`,
-						status: response.status,
-						statusText: response.statusText,
-						url: response.url
-					});
-				}
-			})
-			.then(jsonData => {
-				_response.data = jsonData;
-				return _response;
+		});
+
+		if (response.ok) {
+			return response.json();
+		} else {
+			throw new HttpException({
+				message: `HttpException[${method}]`,
+				status: response.status,
+				statusText: response.statusText,
+				url: response.url
 			});
+		}
 	}
 
 	get({ path }) {
-		return this.callGitHubAPI({ method: 'GET', path, data: null });
+		return this.call({ method: 'GET', path, data: null });
 	}
 
 	delete({ path }) {
-		return this.callGitHubAPI({ method: 'DELETE', path, data: null });
+		return this.call({ method: 'DELETE', path, data: null });
 	}
 
 	post({ path, data }) {
-		return this.callGitHubAPI({ method: 'POST', path, data });
+		return this.call({ method: 'POST', path, data });
 	}
 
 	put({ path, data }) {
-		return this.callGitHubAPI({ method: 'PUT', path, data });
+		return this.call({ method: 'PUT', path, data });
 	}
 }

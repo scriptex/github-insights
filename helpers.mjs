@@ -1,0 +1,32 @@
+// @ts-nocheck
+
+import ora from 'ora';
+import chalk from 'chalk';
+
+export const info = async (msg, fn) => {
+	if (!fn) {
+		console.log(chalk.blue(msg));
+		return;
+	}
+
+	const spinner = ora(chalk.blue(msg)).start();
+	const data = await fn();
+
+	spinner.succeed();
+
+	return data;
+};
+
+export const error = msg => console.log(chalk.red(msg));
+
+export const empty = [
+	{
+		data: []
+	}
+];
+
+export const asyncForEach = async (array, callback) => {
+	for (let index = 0; index < array.length; index++) {
+		await callback(array[index], index, array);
+	}
+};
