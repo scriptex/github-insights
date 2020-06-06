@@ -2,9 +2,9 @@
 	"name": "github-insights",
 	"version": "1.0.0",
 	"description": "Get insights for your Github repositories",
-	"main": "lib/index.mjs",
+	"main": "lib/index.js",
 	"scripts": {
-		"start": "nodemon --experimental-modules lib/index.mjs"
+		"start": "nodemon lib/index.js"
 	},
 	"keywords": [
 		"Github insights",
@@ -21,6 +21,7 @@
 	"dependencies": {
 		"chalk": "4.0.0",
 		"dotenv": "8.2.0",
+		"express": "4.17.1",
 		"node-fetch": "2.6.0",
 		"nodemon": "2.0.4",
 		"ora": "4.0.4",
