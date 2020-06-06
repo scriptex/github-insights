@@ -11,6 +11,10 @@
 			"src": "/insights",
 			"dest": "/api/insights.js",
 			"methods": ["POST"]
+		},
+		{
+			"src": "/",
+			"dest": "/app"
 		}
 	]
 }

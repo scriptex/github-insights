@@ -24,7 +24,6 @@ app.post('/insights', async (req, res) => {
 
 		return res.json(insights);
 	} catch (e) {
-		console.log(e);
-		return res.status(e.status).send({ message: e.message });
+		return res.status(e.status).send({ message: e.statusText });
 	}
 });
