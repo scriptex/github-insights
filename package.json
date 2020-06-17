@@ -5,7 +5,8 @@
 	"main": "lib/index.js",
 	"scripts": {
 		"fetch": "nodemon lib/index.js",
-		"start": "parcel app/index.html"
+		"start": "parcel app/index.html",
+		"build": "parcel build app/index.html --public-url '/'"
 	},
 	"keywords": [
 		"Github insights",
