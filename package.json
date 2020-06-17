@@ -25,8 +25,7 @@
 		"node-fetch": "2.6.0",
 		"nodemon": "2.0.4",
 		"ora": "4.0.4",
-		"tslib": "2.0.0",
-		"universal-github-client": "1.0.1",
+		"universal-github-client": "1.0.2",
 		"yargs": "15.3.1"
 	},
 	"nodemonConfig": {
