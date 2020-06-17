@@ -2,9 +2,9 @@
 	"name": "github-insights",
 	"version": "1.0.0",
 	"description": "Get insights for your Github repositories",
-	"main": "lib/index.js",
+	"main": "api/index.js",
 	"scripts": {
-		"fetch": "nodemon lib/index.js",
+		"fetch": "nodemon api/index.js",
 		"start": "parcel app/index.html",
 		"build": "parcel build app/index.html --public-url '/'"
 	},

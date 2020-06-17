@@ -2,8 +2,8 @@
 
 const express = require('express');
 
-const { getClient } = require('../lib/helpers');
-const { getInsightsFromClient } = require('../lib/insights');
+const { getClient } = require('./helpers');
+const { getInsightsFromClient } = require('./get-insights');
 
 const app = express();
 

@@ -1,11 +1,6 @@
 {
 	"version": 2,
 	"alias": "github-repository-insights",
-	"builds": [
-		{ "src": "api/*.js", "use": "@now/node" },
-		{ "src": "lib/*.js", "use": "@now/node" },
-		{ "src": "app/*.*", "use": "@now/static" }
-	],
 	"routes": [
 		{
 			"src": "/insights",
@@ -14,7 +9,7 @@
 		},
 		{
 			"src": "/",
-			"dest": "/app"
+			"dest": "/dist"
 		}
 	]
 }

@@ -6,7 +6,7 @@ const chalk = require('chalk');
 const yargs = require('yargs');
 const dotenv = require('dotenv');
 
-const { getInsights } = require('./insights.js');
+const { getInsights } = require('./get-insights.js');
 const { info, error, empty, getClient, getRepos, getReposNames } = require('./helpers.js');
 
 dotenv.config();
