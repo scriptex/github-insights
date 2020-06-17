@@ -6,32 +6,7 @@
 		<title>Github Insights</title>
 	</head>
 	<body>
-		<h1>Github Insights</h1>
-
-		<p>Get insights for your repository</p>
-
-		<form>
-			<input type="text" name="repository" value="" placeholder=":owner/:repository" required />
-			<input type="submit" value="Go" />
-		</form>
-
-		<script>
-			const form = document.querySelector('form');
-
-			form.addEventListener('submit', event => {
-				event.preventDefault();
-
-				const data = new FormData(event.target);
-				const repository = data.get('repository');
-
-				fetch('/insights', {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-					body: 'repository=' + repository
-				}).then(async res => {
-					console.log(await res.json());
-				});
-			});
-		</script>
+		<div id="app" class="wrapper"></div>
+		<script src="index.js"></script>
 	</body>
 </html>

@@ -4,7 +4,8 @@
 	"description": "Get insights for your Github repositories",
 	"main": "lib/index.js",
 	"scripts": {
-		"start": "nodemon lib/index.js"
+		"fetch": "nodemon lib/index.js",
+		"start": "parcel app/index.html"
 	},
 	"keywords": [
 		"Github insights",
@@ -20,13 +21,24 @@
 	"license": "MIT",
 	"dependencies": {
 		"chalk": "4.1.0",
+		"date-fns": "2.14.0",
 		"dotenv": "8.2.0",
 		"express": "4.17.1",
 		"node-fetch": "2.6.0",
 		"nodemon": "2.0.4",
 		"ora": "4.0.4",
+		"react": "16.13.1",
+		"react-dom": "16.13.1",
+		"recharts": "1.8.5",
 		"universal-github-client": "1.0.2",
 		"yargs": "15.3.1"
+	},
+	"devDependencies": {
+		"@babel/core": "7.10.2",
+		"@babel/plugin-transform-runtime": "7.10.1",
+		"@babel/preset-env": "7.10.2",
+		"@babel/preset-react": "7.10.1",
+		"parcel-bundler": "1.12.4"
 	},
 	"nodemonConfig": {
 		"verbose": false,
