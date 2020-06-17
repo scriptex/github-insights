@@ -1280,10 +1280,10 @@ unique-string@^2.0.0:
   dependencies:
     crypto-random-string "^2.0.0"
 
-universal-github-client@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/universal-github-client/-/universal-github-client-1.0.1.tgz#15cc062d0e00b0d681605a8705014fca0b28aed3"
-  integrity sha512-1CYi7eK0vXOYkUwm4DAn2jhhyQhVSOddr5Dhmp7Vp5PvBWIr+ofec4u+qgKhQ64m+58FOqshwKIq2awMG9f1ag==
+universal-github-client@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/universal-github-client/-/universal-github-client-1.0.2.tgz#f6330f6fea167fd48e9cfc0be702fa951a4fae85"
+  integrity sha512-2Afpf6zL+76sVknhyjN/3t2umWUl95kzJY78iYA30yr7efea2vIN9/27t0bFoNidHiz+N2iZjkeyHcjBJ11x0w==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
