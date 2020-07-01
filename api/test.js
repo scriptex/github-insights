@@ -4,12 +4,12 @@ const { lstatSync, readdirSync, readFileSync, writeFileSync } = require('fs');
 
 const dirs = readdirSync('../');
 
-const command = (command, cb) => {
-	exec(command, (err, stdout, stderr) => {
+const command = (command, options, cb) => {
+	exec(command, options, (err, stdout, stderr) => {
 		if (err != null) {
-			return cb(new Error(err), null);
+			return cb(err, null);
 		} else if (typeof stderr != 'string') {
-			return cb(new Error(stderr), null);
+			return cb(stderr, null);
 		} else {
 			return cb(null, stdout);
 		}
