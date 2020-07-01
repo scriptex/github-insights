@@ -1,20 +1,8 @@
 const { join } = require('path');
-const { exec } = require('child_process');
+const { execSync } = require('child_process');
 const { lstatSync, readdirSync, readFileSync, writeFileSync } = require('fs');
 
 const dirs = readdirSync('../');
-
-const command = (command, options, cb) => {
-	exec(command, options, (err, stdout, stderr) => {
-		if (err != null) {
-			return cb(err, null);
-		} else if (typeof stderr != 'string') {
-			return cb(stderr, null);
-		} else {
-			return cb(null, stdout);
-		}
-	});
-};
 
 const git = `
 git add .
@@ -36,9 +24,7 @@ dirs.forEach(dir => {
 
 			writeFileSync(filepath, content.replace('failure', 'success'));
 
-			command(git, { path }, (err, result) => {
-				console.log(result);
-			});
+			execSync(git, { path });
 
 			console.log('-----');
 		}
