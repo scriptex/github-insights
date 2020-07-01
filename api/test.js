@@ -29,6 +29,8 @@ dirs.forEach(dir => {
 		const hasWhiteSourceFile = readdirSync(path).find(file => file === '.whitesource');
 
 		if (hasWhiteSourceFile) {
+			console.log(path);
+
 			const filepath = join(path, '.whitesource');
 			const content = readFileSync(filepath, 'utf8');
 
@@ -37,6 +39,8 @@ dirs.forEach(dir => {
 			command(git, (err, result) => {
 				console.log(result);
 			});
+
+			console.log('-----');
 		}
 	}
 });
