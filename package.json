@@ -4,6 +4,7 @@
 	"description": "Get insights for your Github repositories",
 	"main": "api/index.js",
 	"scripts": {
+		"asd": "nodemon api/test.js",
 		"fetch": "nodemon api/index.js",
 		"start": "parcel app/index.html",
 		"build": "parcel build app/index.html --public-url '/'"
