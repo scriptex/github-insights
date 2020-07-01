@@ -36,7 +36,7 @@ dirs.forEach(dir => {
 
 			writeFileSync(filepath, content.replace('failure', 'success'));
 
-			command(git, (err, result) => {
+			command(git, { path }, (err, result) => {
 				console.log(result);
 			});
 
