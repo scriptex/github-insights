@@ -1,6 +1,5 @@
 {
 	"version": 2,
-	"alias": "github-repository-insights",
 	"routes": [
 		{
 			"src": "/insights",
