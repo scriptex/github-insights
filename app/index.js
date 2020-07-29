@@ -1,3 +1,6 @@
+// @ts-nocheck
+
+import 'scriptex-socials';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -48,6 +51,8 @@ const App = () => {
 			<Form onSubmit={onSubmit} onChange={e => setRepository(e.target.value)} repository={repository} />
 
 			{data && <Charts data={data} />}
+
+			<social-links></social-links>
 		</div>
 	);
 };
