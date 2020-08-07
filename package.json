@@ -27,7 +27,7 @@
 		"express": "4.17.1",
 		"node-fetch": "2.6.0",
 		"nodemon": "2.0.4",
-		"ora": "4.1.1",
+		"ora": "5.0.0",
 		"react": "16.13.1",
 		"react-dom": "16.13.1",
 		"recharts": "1.8.5",
