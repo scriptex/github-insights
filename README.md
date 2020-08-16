@@ -45,7 +45,6 @@ This tool uses the 3rd version of the [Github REST API](https://developer.github
 -   referrers
 -   contributors
 
-
 ## Support this project
 
 [![Tweet](https://img.shields.io/badge/Tweet-Share_this_repository-blue.svg?style=flat-square&logo=twitter&color=38A1F3)](https://twitter.com/intent/tweet?text=Checkout%20this%20awesome%20software%20project%3A&url=https%3A%2F%2Fgithub.com%2Fscriptex%2Fgithub-insights&via=scriptexbg&hashtags=software%2Cgithub%2Ccode%2Cawesome)
