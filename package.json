@@ -31,6 +31,8 @@
 		"react": "16.13.1",
 		"react-dom": "16.13.1",
 		"recharts": "1.8.5",
+		"scriptex-socials": "1.2.0",
+		"styled-components": "5.1.1",
 		"universal-github-client": "1.0.3",
 		"yargs": "15.4.1"
 	},

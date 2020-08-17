@@ -3,40 +3,60 @@ import React from 'react';
 import { InsightsBarChart } from './bar-chart';
 import { InsightsPieChart } from './pie-chart';
 
+export const Chart = props => {
+	if (!props.data || props.data.length === 0) {
+		return null;
+	}
+
+	return props.children;
+};
+
 export const Charts = props => (
 	<div className="charts">
-		<InsightsBarChart
-			name="paths"
-			data={props.data.paths.reduce(
-				(result, path) => {
-					result.count = (result.count || 0) + path.count;
-					result.uniques = (result.uniques || 0) + path.uniques;
+		<Chart data={props.data.paths}>
+			<InsightsBarChart
+				name="paths"
+				data={props.data.paths.reduce(
+					(result, path) => {
+						result.count = (result.count || 0) + path.count;
+						result.uniques = (result.uniques || 0) + path.uniques;
 
-					return result;
-				},
-				{
-					paths: props.data.paths
-				}
-			)}
-			title="Paths"
-			dataKey="path"
-		/>
+						return result;
+					},
+					{
+						paths: props.data.paths
+					}
+				)}
+				title="Paths"
+				dataKey="path"
+			/>
+		</Chart>
 
-		<InsightsBarChart name="views" data={props.data.views} title="Views" dataKey="timestamp" />
+		<Chart data={props.data.views}>
+			<InsightsBarChart name="views" data={props.data.views} title="Views" dataKey="timestamp" />
+		</Chart>
 
-		<InsightsBarChart name="views" data={props.data.forks} title="Forks" dataKey="timestamp" />
+		<Chart data={props.data.forks}>
+			<InsightsBarChart name="views" data={props.data.forks} title="Forks" dataKey="timestamp" />
+		</Chart>
 
-		<InsightsBarChart name="clones" data={props.data.clones} title="Clones" dataKey="timestamp" />
+		<Chart data={props.data.clones}>
+			<InsightsBarChart name="clones" data={props.data.clones} title="Clones" dataKey="timestamp" />
+		</Chart>
 
-		<InsightsPieChart name="referrer" data={props.data.referrers} title="Referrers" dataKey="timestamp" />
+		<Chart data={props.data.referrers}>
+			<InsightsPieChart name="referrer" data={props.data.referrers} title="Referrers" dataKey="timestamp" />
+		</Chart>
 
-		<InsightsPieChart
-			name="author"
-			data={props.data.contributors.map(item => ({
-				count: item.total,
-				author: item.author.login
-			}))}
-			title="Contributors"
-		/>
+		<Chart data={props.data.contributors}>
+			<InsightsPieChart
+				name="author"
+				data={props.data.contributors.map(item => ({
+					count: item.total,
+					author: item.author.login
+				}))}
+				title="Contributors"
+			/>
+		</Chart>
 	</div>
 );
