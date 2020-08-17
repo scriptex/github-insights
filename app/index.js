@@ -3,9 +3,60 @@
 import 'scriptex-socials';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import styled, { createGlobalStyle } from 'styled-components';
 
 import { Form } from './form';
 import { Charts } from './charts';
+
+const GlobalStyle = createGlobalStyle`
+* {
+	box-sizing: border-box
+}
+
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html,
+body,
+#app {
+	height: 100%;
+}
+
+body {
+	font-family: 'system-ui';
+	margin: 0;
+}
+`;
+
+const Insights = styled.div`
+	height: ${props => (props.data ? 'auto' : '100%')};
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	padding: 2rem;
+`;
+
+const Error = styled.div`
+	line-height: 1;
+	color: #f00;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1rem;
+`;
+
+const Loading = styled.div`
+	height: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+`;
 
 const App = () => {
 	const [data, setData] = React.useState();
@@ -42,18 +93,23 @@ const App = () => {
 			});
 	};
 
-	return loading ? (
-		<div className="loading">... fetching data for {repository}</div>
-	) : (
-		<div className={`insights${data ? ' insights--fetched' : ''}`}>
-			{error && <div className="error">{error}</div>}
+	return (
+		<>
+			<GlobalStyle />
+			{loading ? (
+				<Loading>... fetching data for {repository}</Loading>
+			) : (
+				<Insights data={data}>
+					{error && <Error>{error}</Error>}
 
-			<Form onSubmit={onSubmit} onChange={e => setRepository(e.target.value)} repository={repository} />
+					<Form onSubmit={onSubmit} onChange={e => setRepository(e.target.value)} repository={repository} />
 
-			{data && <Charts data={data} />}
+					{data && <Charts data={data} />}
 
-			<social-links></social-links>
-		</div>
+					<social-links style={{ display: 'block', marginTop: 'auto' }}></social-links>
+				</Insights>
+			)}
+		</>
 	);
 };
 

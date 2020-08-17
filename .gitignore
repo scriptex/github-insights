@@ -106,3 +106,5 @@ typings/
 insights.json
 
 .vercel
+
+/dist
