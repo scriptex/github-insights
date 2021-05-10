@@ -51,7 +51,7 @@ export const Charts = props => (
 		<Chart data={props.data.contributors}>
 			<InsightsPieChart
 				name="author"
-				data={props.data.contributors.map(item => ({
+				data={props.data.contributors?.map(item => ({
 					count: item.total,
 					author: item.author.login
 				}))}
