@@ -18,7 +18,7 @@ ehthumbs.db
 Thumbs.db
 
 # Project specific
-.cache
+.parcel-cache
 .vercel
 /dist
 

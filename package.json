@@ -2,11 +2,10 @@
 	"name": "github-insights",
 	"version": "1.0.0",
 	"description": "Get insights for your Github repositories",
-	"main": "api/index.js",
 	"scripts": {
 		"fetch": "nodemon api/index.js",
 		"start": "parcel serve app/index.html",
-		"build": "parcel build app/index.html --public-url '/'"
+		"build": "rm -rf dist && parcel build app/index.html --public-url '/'"
 	},
 	"keywords": [
 		"Github insights",
@@ -33,7 +32,7 @@
 		"react-dom": "17.0.2",
 		"react-is": "17.0.2",
 		"recharts": "2.1.5",
-		"scriptex-socials": "1.4.0",
+		"scriptex-socials": "1.5.1",
 		"styled-components": "5.3.3",
 		"universal-github-client": "1.0.3",
 		"yargs": "17.2.1"
@@ -43,7 +42,7 @@
 		"@babel/plugin-transform-runtime": "7.15.8",
 		"@babel/preset-env": "7.15.8",
 		"@babel/preset-react": "7.14.5",
-		"parcel-bundler": "1.12.5"
+		"parcel": "2.0.0"
 	},
 	"nodemonConfig": {
 		"verbose": false,
