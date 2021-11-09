@@ -24,7 +24,7 @@
 		"date-fns": "2.25.0",
 		"dotenv": "10.0.0",
 		"express": "4.17.1",
-		"node-fetch": "3.0.0",
+		"node-fetch": "3.1.0",
 		"nodemon": "2.0.15",
 		"ora": "6.0.1",
 		"prop-types": "15.7.2",
