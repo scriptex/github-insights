@@ -25,7 +25,7 @@
 		"dotenv": "10.0.0",
 		"express": "4.17.1",
 		"node-fetch": "3.0.0",
-		"nodemon": "2.0.14",
+		"nodemon": "2.0.15",
 		"ora": "6.0.1",
 		"prop-types": "15.7.2",
 		"react": "17.0.2",
