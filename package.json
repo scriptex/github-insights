@@ -20,7 +20,7 @@
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
 	"license": "MIT",
 	"dependencies": {
-		"chalk": "4.1.2",
+		"chalk": "5.0.0",
 		"date-fns": "2.26.0",
 		"dotenv": "10.0.0",
 		"express": "4.17.1",
