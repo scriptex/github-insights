@@ -35,7 +35,7 @@
 		"scriptex-socials": "1.5.1",
 		"styled-components": "5.3.3",
 		"universal-github-client": "1.0.3",
-		"yargs": "17.2.1"
+		"yargs": "17.3.0"
 	},
 	"devDependencies": {
 		"@babel/core": "7.16.0",
