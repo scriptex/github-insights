@@ -42,7 +42,8 @@
 		"@babel/plugin-transform-runtime": "7.17.0",
 		"@babel/preset-env": "7.16.11",
 		"@babel/preset-react": "7.16.7",
-		"parcel": "2.3.2"
+		"parcel": "2.3.2",
+		"process": "0.11.10"
 	},
 	"nodemonConfig": {
 		"verbose": false,
