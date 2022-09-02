@@ -32,7 +32,7 @@
 		"react-dom": "18.2.0",
 		"react-is": "18.2.0",
 		"recharts": "2.1.13",
-		"scriptex-socials": "1.5.1",
+		"scriptex-socials": "1.6.0",
 		"styled-components": "5.3.5",
 		"universal-github-client": "1.0.3",
 		"yargs": "17.5.1"
