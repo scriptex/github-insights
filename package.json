@@ -2,23 +2,29 @@
 	"name": "github-insights",
 	"version": "1.0.0",
 	"description": "Get insights for your Github repositories",
+	"keywords": [
+		"Data Vis",
+		"Insights",
+		"Github insights",
+		"Github statistics"
+	],
+	"homepage": "https://github-insights.atanas.info",
+	"bugs": {
+		"url": "https://github.com/scriptex/github-insights/issues",
+		"email": "hi@atanas.info"
+	},
+	"license": "MIT",
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/github-insights"
+	},
 	"scripts": {
 		"fetch": "nodemon api/index.js",
 		"start": "parcel serve app/index.html",
 		"build": "rm -rf dist && parcel build app/index.html --public-url '/'"
 	},
-	"keywords": [
-		"Github insights",
-		"Insights",
-		"Data Vis"
-	],
-	"repository": "git@github.com:scriptex/github-insights.git",
-	"bugs": {
-		"url": "https://github.com/scriptex/github-insights/issues",
-		"email": "scriptex.bg@gmail.com"
-	},
-	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
-	"license": "MIT",
 	"dependencies": {
 		"chalk": "4.1.2",
 		"date-fns": "2.29.2",

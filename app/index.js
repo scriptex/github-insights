@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import 'scriptex-socials';
 import React from 'react';
 import ReactDOM from 'react-dom';

@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 const { writeFileSync } = require('fs');
 
 const chalk = require('chalk');

@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 const ora = require('ora');
 const chalk = require('chalk');
 const fetch = require('node-fetch');

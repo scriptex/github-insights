@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 const express = require('express');
 
 const { getClient } = require('./helpers');

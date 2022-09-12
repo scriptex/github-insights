@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 const chalk = require('chalk');
 
 const { info, separator, asyncForEach } = require('./helpers.js');
