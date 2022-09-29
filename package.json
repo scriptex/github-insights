@@ -38,7 +38,7 @@
 		"react-dom": "18.2.0",
 		"react-is": "18.2.0",
 		"recharts": "2.1.14",
-		"scriptex-socials": "1.6.0",
+		"scriptex-socials": "1.7.0",
 		"styled-components": "5.3.6",
 		"universal-github-client": "1.0.3",
 		"yargs": "17.5.1"
