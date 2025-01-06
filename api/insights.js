@@ -1,7 +1,7 @@
-const express = require('express');
+import express from 'express';
 
-const { getClient } = require('./helpers');
-const { getInsightsFromClient } = require('./get-insights');
+import { getClient } from './helpers.js';
+import { getInsightsFromClient } from './get-insights.js';
 
 const app = express();
 

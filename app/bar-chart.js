@@ -1,10 +1,16 @@
 import React from 'react';
-import format from 'date-fns/format';
 import { Bar, XAxis, YAxis, Legend, Tooltip, BarChart, CartesianGrid } from 'recharts';
 
 import { capitalize, randomColor } from './utils';
 
-const formatter = t => format(new Date(t), 'MMM dd');
+const formatter = t => {
+	const date = new Date(t.replace('Z', ''));
+	const month = date.getMonth();
+	const day = date.getDate();
+	const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+	return `${months[month]} ${day}`;
+};
 const labelFormatter = value => capitalize(value);
 
 export const InsightsBarChart = props => (

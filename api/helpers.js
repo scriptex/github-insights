@@ -1,7 +1,7 @@
-const ora = require('ora');
-const chalk = require('chalk');
-const fetch = require('node-fetch');
-const { GitHubClient } = require('universal-github-client');
+import ora from 'ora';
+import chalk from 'chalk';
+import fetch from 'node-fetch';
+import { GitHubClient } from 'universal-github-client';
 
 const getClient = token =>
 	new GitHubClient({
@@ -52,13 +52,4 @@ const getReposNames = repos =>
 		.map(repo => repo.full_name)
 		.filter(Boolean);
 
-module.exports = {
-	info,
-	error,
-	empty,
-	getRepos,
-	getClient,
-	separator,
-	asyncForEach,
-	getReposNames
-};
+export { info, error, empty, getRepos, getClient, separator, asyncForEach, getReposNames };

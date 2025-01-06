@@ -26,20 +26,19 @@
 		"build": "rm -rf dist && parcel build app/index.html --public-url '/'"
 	},
 	"dependencies": {
-		"chalk": "4.1.2",
-		"date-fns": "4.1.0",
+		"chalk": "5.4.1",
 		"dotenv": "16.4.7",
 		"express": "4.21.2",
-		"node-fetch": "2.7.0",
+		"node-fetch": "3.3.2",
 		"nodemon": "3.1.9",
-		"ora": "5.4.1",
+		"ora": "8.1.1",
 		"prop-types": "15.8.1",
-		"react": "18.3.1",
-		"react-dom": "18.3.1",
-		"react-is": "18.3.1",
+		"react": "19.0.0",
+		"react-dom": "19.0.0",
+		"react-is": "19.0.0",
 		"recharts": "2.15.0",
 		"scriptex-socials": "1.8.0",
-		"styled-components": "6.1.13",
+		"styled-components": "6.1.14",
 		"universal-github-client": "1.0.3",
 		"yargs": "17.7.2"
 	},
@@ -56,5 +55,6 @@
 		"ignore": [
 			"insights.json"
 		]
-	}
+	},
+	"type": "module"
 }
