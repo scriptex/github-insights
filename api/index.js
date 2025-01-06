@@ -1,11 +1,11 @@
-const { writeFileSync } = require('fs');
+import { writeFileSync } from 'fs';
 
-const chalk = require('chalk');
-const yargs = require('yargs');
-const dotenv = require('dotenv');
+import chalk from 'chalk';
+import yargs from 'yargs';
+import dotenv from 'dotenv';
 
-const { getInsights } = require('./get-insights.js');
-const { info, error, empty, getClient, getRepos, getReposNames } = require('./helpers.js');
+import { getInsights } from './get-insights.js';
+import { info, error, empty, getClient, getRepos, getReposNames } from './helpers.js';
 
 dotenv.config();
 

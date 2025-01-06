@@ -1,6 +1,6 @@
-const chalk = require('chalk');
+import chalk from 'chalk';
 
-const { info, separator, asyncForEach } = require('./helpers.js');
+import { info, separator, asyncForEach } from './helpers.js';
 
 const getInsights = (client, repos) =>
 	new Promise(async resolve => {
@@ -94,7 +94,4 @@ const getInsightsFromClient = (client, repos) =>
 		resolve(insights);
 	});
 
-module.exports = {
-	getInsights,
-	getInsightsFromClient
-};
+export { getInsights, getInsightsFromClient };
