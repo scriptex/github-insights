@@ -27,7 +27,6 @@
 	},
 	"dependencies": {
 		"chalk": "5.4.1",
-		"date-fns": "4.1.0",
 		"dotenv": "16.4.7",
 		"express": "4.21.2",
 		"node-fetch": "3.3.2",

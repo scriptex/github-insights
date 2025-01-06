@@ -47,16 +47,5 @@ export const Charts = props => (
 		<Chart data={props.data.referrers}>
 			<InsightsPieChart name="referrer" data={props.data.referrers} title="Referrers" dataKey="timestamp" />
 		</Chart>
-
-		<Chart data={props.data.contributors}>
-			<InsightsPieChart
-				name="author"
-				data={props.data.contributors?.map(item => ({
-					count: item.total,
-					author: item.author.login
-				}))}
-				title="Contributors"
-			/>
-		</Chart>
 	</div>
 );
