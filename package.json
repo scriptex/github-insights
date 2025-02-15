@@ -31,7 +31,7 @@
 		"express": "4.21.2",
 		"node-fetch": "3.3.2",
 		"nodemon": "3.1.9",
-		"ora": "8.1.1",
+		"ora": "8.2.0",
 		"prop-types": "15.8.1",
 		"react": "19.0.0",
 		"react-dom": "19.0.0",
@@ -44,7 +44,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "7.26.9",
-		"@babel/plugin-transform-runtime": "7.25.9",
+		"@babel/plugin-transform-runtime": "7.26.9",
 		"@babel/preset-env": "7.26.9",
 		"@babel/preset-react": "7.26.3",
 		"parcel": "2.13.3",
