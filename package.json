@@ -36,18 +36,18 @@
 		"react": "19.1.0",
 		"react-dom": "19.1.0",
 		"react-is": "19.1.0",
-		"recharts": "2.15.3",
+		"recharts": "2.15.4",
 		"scriptex-socials": "1.8.0",
 		"styled-components": "6.1.19",
 		"universal-github-client": "1.0.3",
 		"yargs": "18.0.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.27.4",
+		"@babel/core": "7.27.7",
 		"@babel/plugin-transform-runtime": "7.27.4",
 		"@babel/preset-env": "7.27.2",
 		"@babel/preset-react": "7.27.1",
-		"parcel": "2.15.2",
+		"parcel": "2.15.4",
 		"process": "0.11.10"
 	},
 	"nodemonConfig": {
