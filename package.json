@@ -36,7 +36,7 @@
 		"react": "19.1.0",
 		"react-dom": "19.1.0",
 		"react-is": "19.1.0",
-		"recharts": "2.15.4",
+		"recharts": "3.0.2",
 		"scriptex-socials": "1.8.0",
 		"styled-components": "6.1.19",
 		"universal-github-client": "1.0.3",
