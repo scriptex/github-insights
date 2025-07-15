@@ -2384,10 +2384,10 @@ dotenv-expand@^11.0.7:
   dependencies:
     dotenv "^16.4.5"
 
-dotenv@17.0.0:
-  version "17.0.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-17.0.0.tgz#0b0336dc1a4237bcfa772e01d5587e98ebb7e3c2"
-  integrity sha512-A0BJ5lrpJVSfnMMXjmeO0xUnoxqsBHWCoqqTnGwGYVdnctqXXUEhJOO7LxmgxJon9tEZFGpe0xPRX0h2v3AANQ==
+dotenv@17.0.1:
+  version "17.0.1"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-17.0.1.tgz#79bc4d232fadb42a4092685ff1206d31b2a43f95"
+  integrity sha512-GLjkduuAL7IMJg/ZnOPm9AnWKJ82mSE2tzXLaJ/6hD6DhwGfZaXG77oB8qbReyiczNxnbxQKyh0OE5mXq0bAHA==
 
 dotenv@^16.4.5, dotenv@^16.5.0:
   version "16.6.1"
@@ -3421,10 +3421,10 @@ scheduler@^0.26.0:
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.26.0.tgz#4ce8a8c2a2095f13ea11bf9a445be50c555d6337"
   integrity sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==
 
-scriptex-socials@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/scriptex-socials/-/scriptex-socials-1.9.0.tgz#a8bdd78e01b16c927c02f5cb3c59769fccf1dd8c"
-  integrity sha512-PXxq7SMpg3ayd/DXIzDE4RHY5NR92x/iZYi6uAdEyoZ0474mseirdJhHjZ/+a158e64jfcAXZCtI4dXJKDrmpg==
+scriptex-socials@1.9.1:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/scriptex-socials/-/scriptex-socials-1.9.1.tgz#26d55bb4705a4916df5839d999bb2852fdeae17d"
+  integrity sha512-+p3F9vg1OVUwutf4UaXEbbm2tXWOHieNSCykPgWf/G0qEsci/BCwVOgGcU3jgpZvCs2ZE7LMDQE90Z5SIhd9Gw==
   dependencies:
     cheerio "^1.0.0-rc.12"
     commander "^14.0.0"
