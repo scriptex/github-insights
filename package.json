@@ -26,7 +26,7 @@
 		"build": "rm -rf dist && parcel build app/index.html --public-url '/'"
 	},
 	"dependencies": {
-		"chalk": "5.4.1",
+		"chalk": "5.5.0",
 		"dotenv": "17.2.1",
 		"express": "5.1.0",
 		"node-fetch": "3.3.2",
