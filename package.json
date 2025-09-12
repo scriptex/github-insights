@@ -26,7 +26,7 @@
 		"build": "rm -rf dist && parcel build app/index.html --public-url '/'"
 	},
 	"dependencies": {
-		"chalk": "5.5.0",
+		"chalk": "5.6.2",
 		"dotenv": "17.2.2",
 		"express": "5.1.0",
 		"node-fetch": "3.3.2",
@@ -36,7 +36,7 @@
 		"react": "19.1.1",
 		"react-dom": "19.1.1",
 		"react-is": "19.1.1",
-		"recharts": "3.1.2",
+		"recharts": "2.12.7",
 		"scriptex-socials": "1.9.1",
 		"styled-components": "6.1.19",
 		"universal-github-client": "1.0.3",
