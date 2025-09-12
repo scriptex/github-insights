@@ -26,8 +26,8 @@
 		"build": "rm -rf dist && parcel build app/index.html --public-url '/'"
 	},
 	"dependencies": {
-		"chalk": "5.5.0",
-		"dotenv": "17.2.1",
+		"chalk": "5.6.2",
+		"dotenv": "17.2.2",
 		"express": "5.1.0",
 		"node-fetch": "3.3.2",
 		"nodemon": "3.1.10",
@@ -36,16 +36,16 @@
 		"react": "19.1.1",
 		"react-dom": "19.1.1",
 		"react-is": "19.1.1",
-		"recharts": "3.1.0",
+		"recharts": "2.12.7",
 		"scriptex-socials": "1.9.1",
 		"styled-components": "6.1.19",
 		"universal-github-client": "1.0.3",
 		"yargs": "18.0.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.28.0",
-		"@babel/plugin-transform-runtime": "7.28.0",
-		"@babel/preset-env": "7.28.0",
+		"@babel/core": "7.28.4",
+		"@babel/plugin-transform-runtime": "7.28.3",
+		"@babel/preset-env": "7.28.3",
 		"@babel/preset-react": "7.27.1",
 		"buffer": "^5.5.0||^6.0.0",
 		"parcel": "2.15.4",
