@@ -48,7 +48,7 @@
 		"@babel/preset-env": "7.28.3",
 		"@babel/preset-react": "7.27.1",
 		"buffer": "^5.5.0||^6.0.0",
-		"parcel": "2.15.4",
+		"parcel": "2.16.0",
 		"process": "0.11.10"
 	},
 	"nodemonConfig": {
