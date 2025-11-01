@@ -43,9 +43,9 @@
 		"yargs": "18.0.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.28.4",
-		"@babel/plugin-transform-runtime": "7.28.3",
-		"@babel/preset-env": "7.28.3",
+		"@babel/core": "7.28.5",
+		"@babel/plugin-transform-runtime": "7.28.5",
+		"@babel/preset-env": "7.28.5",
 		"@babel/preset-react": "7.27.1",
 		"buffer": "^5.5.0||^6.0.0",
 		"parcel": "2.16.0",
