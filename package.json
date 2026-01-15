@@ -38,7 +38,7 @@
 		"react-is": "19.2.3",
 		"recharts": "2.15.4",
 		"scriptex-socials": "1.9.1",
-		"styled-components": "6.1.19",
+		"styled-components": "6.3.6",
 		"universal-github-client": "1.0.3",
 		"yargs": "18.0.0"
 	},
