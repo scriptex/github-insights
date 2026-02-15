@@ -27,7 +27,7 @@
 	},
 	"dependencies": {
 		"chalk": "5.6.2",
-		"dotenv": "17.2.3",
+		"dotenv": "17.2.4",
 		"express": "5.2.1",
 		"node-fetch": "3.3.2",
 		"nodemon": "3.1.11",
@@ -38,7 +38,7 @@
 		"react-is": "19.2.4",
 		"recharts": "2.15.4",
 		"scriptex-socials": "1.9.1",
-		"styled-components": "6.3.8",
+		"styled-components": "6.3.9",
 		"universal-github-client": "1.0.3",
 		"yargs": "18.0.0"
 	},
@@ -48,7 +48,7 @@
 		"@babel/preset-env": "7.29.0",
 		"@babel/preset-react": "7.28.5",
 		"buffer": "^5.5.0||^6.0.0",
-		"parcel": "2.16.3",
+		"parcel": "2.16.4",
 		"process": "0.11.10"
 	},
 	"nodemonConfig": {
