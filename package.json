@@ -38,14 +38,14 @@
 		"react-is": "19.2.4",
 		"recharts": "2.15.4",
 		"scriptex-socials": "1.9.1",
-		"styled-components": "6.3.11",
+		"styled-components": "6.3.12",
 		"universal-github-client": "1.0.3",
 		"yargs": "18.0.0"
 	},
 	"devDependencies": {
 		"@babel/core": "7.29.0",
 		"@babel/plugin-transform-runtime": "7.29.0",
-		"@babel/preset-env": "7.29.0",
+		"@babel/preset-env": "7.29.2",
 		"@babel/preset-react": "7.28.5",
 		"buffer": "^5.5.0||^6.0.0",
 		"parcel": "2.16.4",
