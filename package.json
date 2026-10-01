@@ -26,7 +26,7 @@
 		"build": "rm -rf dist && parcel build app/index.html --public-url '/'"
 	},
 	"dependencies": {
-		"chalk": "6.0.0",
+		"chalk": "6.0.1",
 		"dotenv": "17.4.2",
 		"express": "5.2.1",
 		"node-fetch": "3.3.2",
@@ -43,9 +43,9 @@
 		"yargs": "18.1.0"
 	},
 	"devDependencies": {
-		"@babel/core": "8.0.5",
-		"@babel/plugin-transform-runtime": "8.0.1",
-		"@babel/preset-env": "8.0.5",
+		"@babel/core": "8.0.6",
+		"@babel/plugin-transform-runtime": "8.0.6",
+		"@babel/preset-env": "8.0.6",
 		"@babel/preset-react": "8.0.1",
 		"buffer": "^5.5.0||^6.0.0",
 		"parcel": "2.16.4",
