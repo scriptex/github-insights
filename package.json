@@ -28,7 +28,7 @@
 	"dependencies": {
 		"chalk": "6.0.1",
 		"dotenv": "18.0.5",
-		"express": "5.2.1",
+		"express": "5.3.0",
 		"node-fetch": "3.3.2",
 		"nodemon": "3.1.14",
 		"ora": "9.4.1",
@@ -38,7 +38,7 @@
 		"react-is": "19.3.0",
 		"recharts": "2.15.4",
 		"scriptex-socials": "1.10.1",
-		"styled-components": "6.5.3",
+		"styled-components": "6.6.0",
 		"universal-github-client": "1.0.3",
 		"yargs": "18.2.0"
 	},
